@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-08-16 06:23:45Z" end-time="2018-08-16 06:24:42Z" duration="57.637658">
+  <command-line><![CDATA[..\packages\Nunit.ConsoleRunner.3.8.0\tools\nunit3-console.exe  ..\Demo\bin\debug\Bdd.Practice.dll --where cat==All]]></command-line>
+  <filter>
+    <cat>All</cat>
+  </filter>
+  <test-suite type="Assembly" id="0-1003" name="Bdd.Practice.dll" fullname="C:\Users\RAJANI\source\repos\Demo\Demo\bin\debug\Bdd.Practice.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-08-16 06:23:49Z" end-time="2018-08-16 06:24:42Z" duration="53.571633" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601.65536" platform="Win32NT" cwd="C:\Users\RAJANI\source\repos\Demo\Reports" machine-name="RAJANI-PC" user="RAJANI" user-domain="RAJANI-PC" culture="en-US" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\RAJANI\source\repos\Demo\Reports" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="_PID" value="7628" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1004" name="Bdd" fullname="Bdd" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-08-16 06:23:49Z" end-time="2018-08-16 06:24:42Z" duration="53.441579" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+      <properties />
+      <test-suite type="TestSuite" id="0-1005" name="Practice" fullname="Bdd.Practice" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-08-16 06:23:49Z" end-time="2018-08-16 06:24:42Z" duration="53.439135" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+        <properties />
+        <test-suite type="TestSuite" id="0-1006" name="Features" fullname="Bdd.Practice.Features" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-08-16 06:23:49Z" end-time="2018-08-16 06:24:42Z" duration="53.437004" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <properties />
+          <test-suite type="TestFixture" id="0-1000" name="AvivaHomeLinksFeature" fullname="Bdd.Practice.Features.AvivaHomeLinksFeature" classname="Bdd.Practice.Features.AvivaHomeLinksFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-08-16 06:23:49Z" end-time="2018-08-16 06:24:42Z" duration="53.384103" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+            <properties>
+              <property name="Description" value="AvivaHomeLinks" />
+              <property name="Category" value="All" />
+            </properties>
+            <output><![CDATA[-> Using app.config
+]]></output>
+            <test-case id="0-1002" name="SearchOfAnotherTextInsteadOfAviva" fullname="Bdd.Practice.Features.AvivaHomeLinksFeature.SearchOfAnotherTextInsteadOfAviva" methodname="SearchOfAnotherTextInsteadOfAviva" classname="Bdd.Practice.Features.AvivaHomeLinksFeature" runstate="Runnable" seed="1760881636" result="Passed" start-time="2018-08-16 06:23:51Z" end-time="2018-08-16 06:24:18Z" duration="27.356977" asserts="1">
+              <properties>
+                <property name="Description" value="Search of another text instead of Aviva" />
+                <property name="Category" value="Negative" />
+              </properties>
+              <output><![CDATA[Given User launch google.com
+Launched Google site.
+-> done: AvivaHomeLinksSteps.GivenLaunchGoogle_Com() (5.3s)
+When User search for Aviva%123 in Google
+Written Aviva in Search box and hit submit
+-> done: AvivaHomeLinksSteps.WhenUserSearchForAvivaInGoogle(" Aviva%123") (9.2s)
+Then They should see 9 links in the first search page
+Number of links present: 9
+-> done: AvivaHomeLinksSteps.ThenAllTheRelatedSearchesShouldAppear(9) (0.1s)
+And They should see the fifth link text
+The text of fifth link is : Aviva-Life-Insurance Jobs in Dibrugarh (2018-19) - 123 Available ...
+-> done: AvivaHomeLinksSteps.ThenTheyShouldSeeTheFifthLinkText() (0.2s)
+]]></output>
+            </test-case>
+            <test-case id="0-1001" name="SuccessfulSearchOfAvivaInTheGoogleHomepage" fullname="Bdd.Practice.Features.AvivaHomeLinksFeature.SuccessfulSearchOfAvivaInTheGoogleHomepage" methodname="SuccessfulSearchOfAvivaInTheGoogleHomepage" classname="Bdd.Practice.Features.AvivaHomeLinksFeature" runstate="Runnable" seed="448659976" result="Passed" start-time="2018-08-16 06:24:18Z" end-time="2018-08-16 06:24:42Z" duration="24.160056" asserts="1">
+              <properties>
+                <property name="Description" value="Successful search of Aviva in the Google homepage" />
+                <property name="Category" value="Positive" />
+              </properties>
+              <output><![CDATA[Given User launch google.com
+Launched Google site.
+-> done: AvivaHomeLinksSteps.GivenLaunchGoogle_Com() (5.7s)
+When User search for Aviva in Google
+Written Aviva in Search box and hit submit
+-> done: AvivaHomeLinksSteps.WhenUserSearchForAvivaInGoogle(" Aviva") (10.9s)
+Then They should see 6 links in the first search page
+Number of links present: 6
+-> done: AvivaHomeLinksSteps.ThenAllTheRelatedSearchesShouldAppear(6) (0.1s)
+And They should see the fifth link text
+The text of fifth link is : Aviva - Home | Facebook
+-> done: AvivaHomeLinksSteps.ThenTheyShouldSeeTheFifthLinkText() (0.2s)
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

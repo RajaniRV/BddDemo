@@ -23,12 +23,7 @@ namespace Bdd.Practice.StepDefinitions
             Console.WriteLine("Launched Google site.");
         }
 
-        [When(@"User search for Aviva in Google")]
-        public void WhenUserIsOnGooglePageSearchForAviva()
-        {
-            this.googlePage.TriggerSearch("Aviva");
-            Console.WriteLine("Written Aviva in search box and hit submit");
-        }
+       
 
         [Then(@"They should see (.*) links in the first search page")]
         public void ThenAllTheRelatedSearchesShouldAppear(int linksExpected)
@@ -36,6 +31,13 @@ namespace Bdd.Practice.StepDefinitions
             int linkCount = googlePage.LinkElements.Count();
             Console.WriteLine("Number of links present: " + linkCount);
             Assert.IsTrue(linksExpected == linkCount);
+        }
+        [When(@"User search for(.*) in Google")]
+
+        public void WhenUserSearchForAvivaInGoogle(String text)
+        {
+            this.googlePage.TriggerSearch(text);
+            Console.WriteLine("Written Aviva in Search box and hit submit");
         }
 
         [Then(@"They should see the fifth link text")]

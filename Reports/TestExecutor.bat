@@ -1,0 +1,1 @@
+..\packages\Nunit.ConsoleRunner.3.8.0\tools\nunit3-console.exe ..\Demo\bin\debug\Bdd.Practice.dll --where cat==All

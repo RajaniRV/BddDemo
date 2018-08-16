@@ -1,3 +1,4 @@
+C:\Users\RAJANI\source\repos\Demo\Demo\obj\Debug\Bdd.Practice.csproj.CoreCompileInputs.cache
 C:\Users\RAJANI\source\repos\Demo\Demo\bin\Debug\Bdd.Practice.dll.config
 C:\Users\RAJANI\source\repos\Demo\Demo\bin\Debug\Bdd.Practice.dll
 C:\Users\RAJANI\source\repos\Demo\Demo\bin\Debug\Bdd.Practice.pdb
@@ -12,7 +13,6 @@ C:\Users\RAJANI\source\repos\Demo\Demo\bin\Debug\nunit.framework.pdb
 C:\Users\RAJANI\source\repos\Demo\Demo\bin\Debug\nunit.framework.xml
 C:\Users\RAJANI\source\repos\Demo\Demo\bin\Debug\WebDriver.xml
 C:\Users\RAJANI\source\repos\Demo\Demo\bin\Debug\WebDriver.Support.xml
-C:\Users\RAJANI\source\repos\Demo\Demo\obj\Debug\Bdd.Practice.csproj.CoreCompileInputs.cache
 C:\Users\RAJANI\source\repos\Demo\Demo\obj\Debug\Bdd.Practice.csproj.CopyComplete
 C:\Users\RAJANI\source\repos\Demo\Demo\obj\Debug\Bdd.Practice.dll
 C:\Users\RAJANI\source\repos\Demo\Demo\obj\Debug\Bdd.Practice.pdb

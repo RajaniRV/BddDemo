@@ -19,6 +19,7 @@ namespace Bdd.Practice.Features
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("AvivaHomeLinks")]
+    [NUnit.Framework.CategoryAttribute("All")]
     public partial class AvivaHomeLinksFeature
     {
         
@@ -32,7 +33,8 @@ namespace Bdd.Practice.Features
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "AvivaHomeLinks", "\tIn order to get main links on Google for Aviva\r\n\tAs a user I search for Google\r\n" +
-                    "\tSo that I can see the links of Aviva websites", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "\tSo that I can see the links of Aviva websites", ProgrammingLanguage.CSharp, new string[] {
+                        "All"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,18 +68,41 @@ namespace Bdd.Practice.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Successful search of Aviva in the Google homepage")]
+        [NUnit.Framework.CategoryAttribute("Positive")]
         public virtual void SuccessfulSearchOfAvivaInTheGoogleHomepage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful search of Aviva in the Google homepage", ((string[])(null)));
-#line 6
-this.ScenarioSetup(scenarioInfo);
-#line 7
- testRunner.Given("User launch google.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful search of Aviva in the Google homepage", new string[] {
+                        "Positive"});
 #line 8
- testRunner.When("User search for Aviva in Google", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 9
- testRunner.Then("They should see 6 links in the first search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("User launch google.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
+ testRunner.When("User search for Aviva in Google", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+ testRunner.Then("They should see 6 links in the first search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 12
+ testRunner.And("They should see the fifth link text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Search of another text instead of Aviva")]
+        [NUnit.Framework.CategoryAttribute("Negative")]
+        public virtual void SearchOfAnotherTextInsteadOfAviva()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search of another text instead of Aviva", new string[] {
+                        "Negative"});
+#line 15
+this.ScenarioSetup(scenarioInfo);
+#line 16
+   testRunner.Given("User launch google.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 17
+ testRunner.When("User search for Aviva%123 in Google", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
+ testRunner.Then("They should see 9 links in the first search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 19
  testRunner.And("They should see the fifth link text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
